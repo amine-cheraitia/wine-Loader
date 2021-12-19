@@ -27,4 +27,77 @@
 	background-color: #f5f5dc;
 	width: 150px;
 	height: 200px;
+	position: relative;
+
+	overflow: hidden;
+}
+.mainwave {
+	/* border-radius: 50px 70%; */
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background-color: #a148f7;
+	bottom: 0;
+	left: 0;
+	/* border-radius: -40px -10px -50px -60% */
+	z-index: 1;
+}
+
+.secondwave {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+}
+#wave {
+	position: absolute;
+	top: -60px;
+	left: -40px;
+	z-index: 4;
+	animation: wave 3s linear infinite;
+	width: 400px;
+}
+#w {
+	position: absolute;
+	top: -80px;
+	left: -40px;
+	z-index: 99;
+	animation: wave 1.2s linear infinite;
+	width: 400px;
+}
+
+@keyframes wave {
+	0% {
+		transform: translate(0px);
+	}
+	100% {
+		transform: translate(-50%);
+	}
+}
+
+.drop {
+	position: absolute;
+	border-radius: 50%;
+	width: 18px;
+	height: 18px;
+	background: #e047f8;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: upAndDown 1.5s linear infinite;
+}
+
+@keyframes upAndDown {
+	0% {
+		top: 30%;
+	}
+	50% {
+		top: 55%;
+	}
+	100% {
+		top: 30%;
+	}
 }
