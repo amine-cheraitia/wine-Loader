@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	height: 100vh;
+	background-color: #222222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: #333333;
+	width: 350px;
+	height: 400px;
+	margin: auto 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.verre {
+	border-radius: 0px 0px 45% 45%;
+	background-color: #f5f5dc;
+	width: 150px;
+	height: 200px;
+}
